@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-05-20T18:05:08Z" product-name="galerie_lstbdd">
+		<header/>
+		<body>
+			<trans-unit id="nom.description">
+				<source>nom</source>
+			</trans-unit>
+			<trans-unit id="hauteur.description">
+				<source>Hauteur</source>
+			</trans-unit>
+			<trans-unit id="largeur.description">
+				<source>Largeur</source>
+			</trans-unit>
+			<trans-unit id="date_publication.description">
+				<source>Date de publication</source>
+			</trans-unit>
+			<trans-unit id="date_prise.description">
+				<source>Date de prise</source>
+			</trans-unit>
+			<trans-unit id="lieu.description">
+				<source>lieu de prise</source>
+			</trans-unit>
+			<trans-unit id="fichier.description">
+				<source>fichier</source>
+			</trans-unit>
+			<trans-unit id="tags.description">
+				<source>tags</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

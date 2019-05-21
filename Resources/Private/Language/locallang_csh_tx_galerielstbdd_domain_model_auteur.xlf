@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-05-20T18:05:08Z" product-name="galerie_lstbdd">
+		<header/>
+		<body>
+			<trans-unit id="nom.description">
+				<source>Nom</source>
+			</trans-unit>
+			<trans-unit id="prenom.description">
+				<source>Prénom</source>
+			</trans-unit>
+			<trans-unit id="profession.description">
+				<source>Profession</source>
+			</trans-unit>
+			<trans-unit id="adress.description">
+				<source>adresse</source>
+			</trans-unit>
+			<trans-unit id="email.description">
+				<source>Email</source>
+			</trans-unit>
+			<trans-unit id="telephone.description">
+				<source>Numéro de téléphone</source>
+			</trans-unit>
+			<trans-unit id="site_internet.description">
+				<source>Site internet de l&#039;auteur</source>
+			</trans-unit>
+			<trans-unit id="bio.description">
+				<source>Biographie (wysiwyg)</source>
+			</trans-unit>
+			<trans-unit id="albums.description">
+				<source>Un auteur peut avoir un ou plusieurs albums</source>
+			</trans-unit>
+			<trans-unit id="reseau_social.description">
+				<source>Un auteur peut avoir de aucun à plusieurs réseaux sociaux</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

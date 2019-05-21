@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-05-20T18:05:08Z" product-name="galerie_lstbdd">
+		<header/>
+		<body>
+			<trans-unit id="tx_galerielstbdd_domain_model_auteur">
+				<source>Auteur</source>
+			</trans-unit>
+			<trans-unit id="tx_galerielstbdd_domain_model_auteur.nom">
+				<source>Nom</source>
+			</trans-unit>
+			<trans-unit id="tx_galerielstbdd_domain_model_auteur.prenom">
+				<source>Prenom</source>
+			</trans-unit>
+			<trans-unit id="tx_galerielstbdd_domain_model_auteur.profession">
+				<source>Profession</source>
+			</trans-unit>
+			<trans-unit id="tx_galerielstbdd_domain_model_auteur.adress">
+				<source>Adress</source>
+			</trans-unit>
+			<trans-unit id="tx_galerielstbdd_domain_model_auteur.email">
+				<source>Email</source>
+			</trans-unit>
+			<trans-unit id="tx_galerielstbdd_domain_model_auteur.telephone">
+				<source>Telephone</source>
+			</trans-unit>
+			<trans-unit id="tx_galerielstbdd_domain_model_auteur.site_internet">
+				<source>Site Internet</source>
+			</trans-unit>
+			<trans-unit id="tx_galerielstbdd_domain_model_auteur.bio">
+				<source>Bio</source>
+			</trans-unit>
+			<trans-unit id="tx_galerielstbdd_domain_model_auteur.albums">
+				<source>Albums</source>
+			</trans-unit>
+			<trans-unit id="tx_galerielstbdd_domain_model_auteur.reseau_social">
+				<source>Reseau Social</source>
+			</trans-unit>
+			<trans-unit id="tx_galerielstbdd_domain_model_image">
+				<source>Image</source>
+			</trans-unit>
+			<trans-unit id="tx_galerielstbdd_domain_model_image.nom">
+				<source>Nom</source>
+			</trans-unit>
+			<trans-unit id="tx_galerielstbdd_domain_model_image.hauteur">
+				<source>Hauteur</source>
+			</trans-unit>
+			<trans-unit id="tx_galerielstbdd_domain_model_image.largeur">
+				<source>Largeur</source>
+			</trans-unit>
+			<trans-unit id="tx_galerielstbdd_domain_model_image.date_publication">
+				<source>Date Publication</source>
+			</trans-unit>
+			<trans-unit id="tx_galerielstbdd_domain_model_image.date_prise">
+				<source>Date Prise</source>
+			</trans-unit>
+			<trans-unit id="tx_galerielstbdd_domain_model_image.lieu">
+				<source>Lieu</source>
+			</trans-unit>
+			<trans-unit id="tx_galerielstbdd_domain_model_image.fichier">
+				<source>Fichier</source>
+			</trans-unit>
+			<trans-unit id="tx_galerielstbdd_domain_model_image.tags">
+				<source>Tags</source>
+			</trans-unit>
+			<trans-unit id="tx_galerielstbdd_domain_model_album">
+				<source>Album</source>
+			</trans-unit>
+			<trans-unit id="tx_galerielstbdd_domain_model_album.nom">
+				<source>Nom</source>
+			</trans-unit>
+			<trans-unit id="tx_galerielstbdd_domain_model_album.date">
+				<source>Date</source>
+			</trans-unit>
+			<trans-unit id="tx_galerielstbdd_domain_model_album.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_galerielstbdd_domain_model_album.images">
+				<source>Images</source>
+			</trans-unit>
+			<trans-unit id="tx_galerielstbdd_domain_model_album.categories">
+				<source>Categories</source>
+			</trans-unit>
+			<trans-unit id="tx_galerielstbdd_domain_model_album.tags">
+				<source>Tags</source>
+			</trans-unit>
+			<trans-unit id="tx_galerielstbdd_domain_model_category">
+				<source>Category</source>
+			</trans-unit>
+			<trans-unit id="tx_galerielstbdd_domain_model_category.nom">
+				<source>Nom</source>
+			</trans-unit>
+			<trans-unit id="tx_galerielstbdd_domain_model_category.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_galerielstbdd_domain_model_tag">
+				<source>Tag</source>
+			</trans-unit>
+			<trans-unit id="tx_galerielstbdd_domain_model_tag.libelle">
+				<source>Libelle</source>
+			</trans-unit>
+			<trans-unit id="tx_galerielstbdd_domain_model_reseausocial">
+				<source>Reseau Social</source>
+			</trans-unit>
+			<trans-unit id="tx_galerielstbdd_domain_model_reseausocial.identifier">
+				<source>Identifier</source>
+			</trans-unit>
+			<trans-unit id="tx_galerielstbdd_domain_model_reseausocial.type">
+				<source>Type</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,36 @@
+{
+    "name": "galerielstbdd/galerie-lstbdd",
+    "type": "typo3-cms-extension",
+    "description": "Galerie d'image pour un projet \u00e9tudiant DAWIN",
+    "authors": [
+        {
+            "name": "Lo\u00efc BITTER",
+            "role": "Developer"
+        },
+        {
+            "name": "Tony DUONG",
+            "role": "Developer"
+        },
+        {
+            "name": "Sylvain DUPUY",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "typo3/cms-core": "^8.7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Galerielstbdd\\GalerieLstbdd\\": "Classes"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Galerielstbdd\\GalerieLstbdd\\Tests\\": "Tests"
+        }
+    },
+    "replace": {
+        "galerie_lstbdd": "self.version",
+        "typo3-ter/galerie-lstbdd": "self.version"
+    }
+}
