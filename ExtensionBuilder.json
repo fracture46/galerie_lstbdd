@@ -155,8 +155,8 @@
         {
             "config": {
                 "position": [
-                    656,
-                    21
+                    655,
+                    20
                 ]
             },
             "name": "New Model Object",
@@ -287,8 +287,8 @@
         {
             "config": {
                 "position": [
-                    980,
-                    78
+                    979,
+                    77
                 ]
             },
             "name": "New Model Object",
@@ -375,9 +375,9 @@
                             "propertyIsExcludeField": true,
                             "relationDescription": "Un album peut avoir une ou plusieurs cat\u00e9gories",
                             "relationName": "categories",
-                            "relationType": "zeroToMany",
+                            "relationType": "manyToMany",
                             "relationWire": "[wired]",
-                            "renderType": "inline",
+                            "renderType": "selectMultipleSideBySide",
                             "uid": "831000475120"
                         },
                         {
@@ -398,7 +398,7 @@
         {
             "config": {
                 "position": [
-                    395,
+                    394,
                     260
                 ]
             },
@@ -461,8 +461,8 @@
         {
             "config": {
                 "position": [
-                    708,
-                    516
+                    707,
+                    515
                 ]
             },
             "name": "New Model Object",
@@ -514,7 +514,7 @@
             "config": {
                 "position": [
                     70,
-                    496
+                    495
                 ]
             },
             "name": "New Model Object",
@@ -702,7 +702,7 @@
         }
     ],
     "log": {
-        "last_modified": "2019-06-11 02:50",
+        "last_modified": "2019-06-11 03:47",
         "extension_builder_version": "8.10.4",
         "be_user": " (1)"
     }

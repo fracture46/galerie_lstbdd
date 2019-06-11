@@ -177,19 +177,27 @@ return [
             'exclude' => true,
             'label' => 'LLL:EXT:galerie_lstbdd/Resources/Private/Language/locallang_db.xlf:tx_galerielstbdd_domain_model_album.categories',
             'config' => [
-                'type' => 'inline',
+                'type' => 'select',
+                'renderType' => 'selectMultipleSideBySide',
                 'foreign_table' => 'tx_galerielstbdd_domain_model_category',
-                'foreign_field' => 'album',
+                'MM' => 'tx_galerielstbdd_album_category_mm',
+                'size' => 10,
+                'autoSizeMax' => 30,
                 'maxitems' => 9999,
-                'appearance' => [
-                    'collapseAll' => 0,
-                    'levelLinksPosition' => 'top',
-                    'showSynchronizationLink' => 1,
-                    'showPossibleLocalizationRecords' => 1,
-                    'showAllLocalizationLink' => 1
+                'multiple' => 0,
+                'fieldControl' => [
+                    'editPopup' => [
+                        'disabled' => false,
+                    ],
+                    'addRecord' => [
+                        'disabled' => false,
+                    ],
+                    'listModule' => [
+                        'disabled' => true,
+                    ],
                 ],
             ],
-
+            
         ],
         'tags' => [
             'exclude' => true,

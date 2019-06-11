@@ -152,8 +152,6 @@ CREATE TABLE tx_galerielstbdd_domain_model_category (
 	uid int(11) NOT NULL auto_increment,
 	pid int(11) DEFAULT '0' NOT NULL,
 
-	album int(11) unsigned DEFAULT '0' NOT NULL,
-
 	nom varchar(255) DEFAULT '' NOT NULL,
 	description text,
 
@@ -312,12 +310,17 @@ CREATE TABLE tx_galerielstbdd_domain_model_image (
 );
 
 #
-# Table structure for table 'tx_galerielstbdd_domain_model_category'
+# Table structure for table 'tx_galerielstbdd_album_category_mm'
 #
-CREATE TABLE tx_galerielstbdd_domain_model_category (
+CREATE TABLE tx_galerielstbdd_album_category_mm (
+	uid_local int(11) unsigned DEFAULT '0' NOT NULL,
+	uid_foreign int(11) unsigned DEFAULT '0' NOT NULL,
+	sorting int(11) unsigned DEFAULT '0' NOT NULL,
+	sorting_foreign int(11) unsigned DEFAULT '0' NOT NULL,
 
-	album int(11) unsigned DEFAULT '0' NOT NULL,
-
+	PRIMARY KEY (uid_local,uid_foreign),
+	KEY uid_local (uid_local),
+	KEY uid_foreign (uid_foreign)
 );
 
 #

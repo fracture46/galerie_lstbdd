@@ -143,10 +143,5 @@ return [
             
         ],
     
-        'album' => [
-            'config' => [
-                'type' => 'passthrough',
-            ],
-        ],
     ],
 ];
