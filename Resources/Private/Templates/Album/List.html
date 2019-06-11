@@ -13,30 +13,18 @@
 	Otherwise your changes will be overwritten the next time you save the extension in the extension builder
 
 	<f:section name="content">
-		<h1>Listing for Album</h1>
+		<h1>Liste d'albums</h1>
 
 		<f:flashMessages />
 
-		<table  class="tx_galerielstbdd" >
-			<tr>
-				<th><f:translate key="tx_galerielstbdd_domain_model_album.nom" /></th>
-				<th><f:translate key="tx_galerielstbdd_domain_model_album.date" /></th>
-				<th><f:translate key="tx_galerielstbdd_domain_model_album.description" /></th>
-				<th> </th>
-				<th> </th>
-			</tr>
-
+		<ul class="tx_galerielstbdd list-group" >
 			<f:for each="{albums}" as="album">
-				<tr>
-					<td><f:link.action action="show" arguments="{album : album}"> {album.nom}</f:link.action></td>
-					<td><f:link.action action="show" arguments="{album : album}"> {album.date -> f:format.date()}</f:link.action></td>
-					<td><f:link.action action="show" arguments="{album : album}"> {album.description}</f:link.action></td>
-					<td><f:link.action action="edit" arguments="{album : album}">Edit</f:link.action></td>
-					<td><f:link.action action="delete" arguments="{album : album}">Delete</f:link.action></td>
-				</tr>
+				<li class="list-group-item">
+					<f:link.action action="show" arguments="{album : album}"> {album.nom}</f:link.action> publié le
+					<f:format.date format="d/m/Y">{album.date}</f:format.date>
+					<f:format.html>{album.description}</f:format.html>
+				</li>
 			</f:for>
-		</table>
-
-		<f:link.action action="new">New Album</f:link.action>
+		</ul>
 	</f:section>
 </html>
