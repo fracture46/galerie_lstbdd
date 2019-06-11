@@ -3,15 +3,15 @@
         {
             "config": {
                 "position": [
-                    82,
-                    13
+                    110,
+                    70
                 ]
             },
             "name": "New Model Object",
             "value": {
                 "actionGroup": {
-                    "_default0_list": false,
-                    "_default1_show": false,
+                    "_default0_list": true,
+                    "_default1_show": true,
                     "_default2_new_create": false,
                     "_default3_edit_update": false,
                     "_default4_delete": false,
@@ -155,8 +155,8 @@
         {
             "config": {
                 "position": [
-                    338,
-                    121
+                    656,
+                    21
                 ]
             },
             "name": "New Model Object",
@@ -167,7 +167,9 @@
                     "_default2_new_create": false,
                     "_default3_edit_update": false,
                     "_default4_delete": false,
-                    "customActions": []
+                    "customActions": [
+                        "latest"
+                    ]
                 },
                 "name": "Image",
                 "objectsettings": {
@@ -285,19 +287,22 @@
         {
             "config": {
                 "position": [
-                    808,
-                    15
+                    980,
+                    78
                 ]
             },
             "name": "New Model Object",
             "value": {
                 "actionGroup": {
-                    "_default0_list": false,
-                    "_default1_show": false,
+                    "_default0_list": true,
+                    "_default1_show": true,
                     "_default2_new_create": false,
                     "_default3_edit_update": false,
                     "_default4_delete": false,
-                    "customActions": []
+                    "customActions": [
+                        "latest",
+                        "search"
+                    ]
                 },
                 "name": "Album",
                 "objectsettings": {
@@ -393,15 +398,15 @@
         {
             "config": {
                 "position": [
-                    511,
-                    398
+                    395,
+                    260
                 ]
             },
             "name": "New Model Object",
             "value": {
                 "actionGroup": {
-                    "_default0_list": false,
-                    "_default1_show": false,
+                    "_default0_list": true,
+                    "_default1_show": true,
                     "_default2_new_create": false,
                     "_default3_edit_update": false,
                     "_default4_delete": false,
@@ -456,8 +461,8 @@
         {
             "config": {
                 "position": [
-                    816,
-                    413
+                    708,
+                    516
                 ]
             },
             "name": "New Model Object",
@@ -508,8 +513,8 @@
         {
             "config": {
                 "position": [
-                    63,
-                    357
+                    70,
+                    496
                 ]
             },
             "name": "New Model Object",
@@ -586,8 +591,8 @@
         },
         "extensionKey": "galerie_lstbdd",
         "name": "Galerie_lstbdd",
-        "originalExtensionKey": "",
-        "originalVendorName": "",
+        "originalExtensionKey": "galerie_lstbdd",
+        "originalVendorName": "Galerielstbdd",
         "persons": [
             {
                 "company": "IUT Bordeaux",
@@ -608,7 +613,18 @@
                 "role": "Developer"
             }
         ],
-        "plugins": [],
+        "plugins": [
+            {
+                "actions": {
+                    "controllerActionCombinations": "Auteur => list,show\nImage => latest\nCategory => list,show\nAlbum => list,show,latest",
+                    "noncacheableActions": "Album => search",
+                    "switchableActions": "Dernieres photos\nImage->latest;\nDerniers albums\nAlbum->latest;\nListe albums\nAlbum->list;Album->show;Album->search;\nListe auteurs\nAuteur->list;Auteur->show;\nListe categories\nCategory->list;Category->show;"
+                },
+                "description": "Regroupe les fonctionnalit\u00e9s de l'extension Galerie_lstbdd dans un bloc de contenu affichant une galerie photo",
+                "key": "pi1",
+                "name": "GaleriePhotoLstbdd"
+            }
+        ],
         "vendorName": "Galerielstbdd"
     },
     "wires": [
@@ -686,7 +702,7 @@
         }
     ],
     "log": {
-        "last_modified": "2019-05-20 06:05",
+        "last_modified": "2019-06-11 02:50",
         "extension_builder_version": "8.10.4",
         "be_user": " (1)"
     }
