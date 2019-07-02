@@ -22,6 +22,7 @@
 			<f:for each="{images}" as="image">
 				<li class="list-group-item">
 					<p> {image.nom}</p>
+					<f:image image="{image.fichier}" width="256" height="256"/>
 				</li>
 			</f:for>
 		</ul>
