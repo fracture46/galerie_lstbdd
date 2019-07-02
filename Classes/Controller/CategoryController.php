@@ -20,6 +20,15 @@ namespace Galerielstbdd\GalerieLstbdd\Controller;
 class CategoryController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
 {
     /**
+     * categoryRepository
+     * 
+     * @var \Galerielstbdd\GalerieLstbdd\Domain\Repository\CategoryRepository
+     * @inject
+     */
+    protected $categoryRepository = null;
+
+
+    /**
      * action list
      * 
      * @return void

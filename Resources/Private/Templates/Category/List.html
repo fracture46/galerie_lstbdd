@@ -13,28 +13,17 @@
 	Otherwise your changes will be overwritten the next time you save the extension in the extension builder
 
 	<f:section name="content">
-		<h1>Listing for Category</h1>
+		<h1>Liste des catégories</h1>
 
 		<f:flashMessages />
 
-		<table  class="tx_galerielstbdd" >
-			<tr>
-				<th><f:translate key="tx_galerielstbdd_domain_model_category.nom" /></th>
-				<th><f:translate key="tx_galerielstbdd_domain_model_category.description" /></th>
-				<th> </th>
-				<th> </th>
-			</tr>
+		<ul class="tx_galerielstbdd list-group">
 
 			<f:for each="{categories}" as="category">
-				<tr>
-					<td><f:link.action action="show" arguments="{category : category}"> {category.nom}</f:link.action></td>
-					<td><f:link.action action="show" arguments="{category : category}"> {category.description}</f:link.action></td>
-					<td><f:link.action action="edit" arguments="{category : category}">Edit</f:link.action></td>
-					<td><f:link.action action="delete" arguments="{category : category}">Delete</f:link.action></td>
-				</tr>
+				<li class="list-group-item">
+					<f:link.action action="show" arguments="{category : category}"> {category.nom}</f:link.action>
+				</li>
 			</f:for>
-		</table>
-
-		<f:link.action action="new">New Category</f:link.action>
+		</ul>
 	</f:section>
 </html>

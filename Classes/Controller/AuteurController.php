@@ -20,6 +20,15 @@ namespace Galerielstbdd\GalerieLstbdd\Controller;
 class AuteurController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
 {
     /**
+     * auteurRepository
+     * 
+     * @var \Galerielstbdd\GalerieLstbdd\Domain\Repository\AuteurRepository
+     * @inject
+     */
+    protected $auteurRepository = null;
+
+
+    /**
      * action list
      * 
      * @return void

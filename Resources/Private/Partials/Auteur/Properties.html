@@ -1,67 +1,67 @@
 <html xmlns:f="https://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
-<table class="tx-galerie-lstbdd" >
-	<tr>
-		<td>
+<table class="tx-galerie-lstbdd container" >
+	<tr class="row">
+		<td class="col-sm-1">
 			<f:translate key="tx_galerielstbdd_domain_model_auteur.nom" />
 		</td>
-		<td>
+		<td class="col-sm-10">
 		{auteur.nom}
 		</td>
 	</tr>
-	<tr>
-		<td>
+	<tr class="row">
+		<td class="col-sm-2">
 			<f:translate key="tx_galerielstbdd_domain_model_auteur.prenom" />
 		</td>
-		<td>
+		<td class="col-sm-10">
 		{auteur.prenom}
 		</td>
 	</tr>
-	<tr>
-		<td>
+	<tr class="row">
+		<td class="col-sm-2">
 			<f:translate key="tx_galerielstbdd_domain_model_auteur.profession" />
 		</td>
-		<td>
+		<td class="col-sm-10">
 		{auteur.profession}
 		</td>
 	</tr>
-	<tr>
-		<td>
+	<tr class="row">
+		<td class="col-sm-2">
 			<f:translate key="tx_galerielstbdd_domain_model_auteur.adress" />
 		</td>
-		<td>
+		<td class="col-sm-10">
 		{auteur.adress}
 		</td>
 	</tr>
-	<tr>
-		<td>
+	<tr class="row">
+		<td class="col-sm-2">
 			<f:translate key="tx_galerielstbdd_domain_model_auteur.email" />
 		</td>
-		<td>
+		<td class="col-sm-10">
 		{auteur.email}
 		</td>
 	</tr>
-	<tr>
-		<td>
+	<tr class="row">
+		<td class="col-sm-2">
 			<f:translate key="tx_galerielstbdd_domain_model_auteur.telephone" />
 		</td>
-		<td>
+		<td class="col-sm-10">
 		{auteur.telephone}
 		</td>
 	</tr>
-	<tr>
-		<td>
+	<tr class="row">
+		<td class="col-sm-2">
 			<f:translate key="tx_galerielstbdd_domain_model_auteur.site_internet" />
 		</td>
-		<td>
+		<td class="col-sm-10">
 		{auteur.siteInternet}
 		</td>
 	</tr>
-	<tr>
-		<td>
+	<tr class="row">
+		<td class="col-sm-2">
 			<f:translate key="tx_galerielstbdd_domain_model_auteur.bio" />
 		</td>
-		<td>
-		{auteur.bio}
+		<td class="col-sm-10">
+			<f:format.html>{auteur.bio}</f:format.html>
 		</td>
 	</tr>
 </table>

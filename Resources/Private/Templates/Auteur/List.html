@@ -13,40 +13,18 @@
 	Otherwise your changes will be overwritten the next time you save the extension in the extension builder
 
 	<f:section name="content">
-		<h1>Listing for Auteur</h1>
+		<h2>Liste d'Auteur</h2>
 
 		<f:flashMessages />
 
-		<table  class="tx_galerielstbdd" >
-			<tr>
-				<th><f:translate key="tx_galerielstbdd_domain_model_auteur.nom" /></th>
-				<th><f:translate key="tx_galerielstbdd_domain_model_auteur.prenom" /></th>
-				<th><f:translate key="tx_galerielstbdd_domain_model_auteur.profession" /></th>
-				<th><f:translate key="tx_galerielstbdd_domain_model_auteur.adress" /></th>
-				<th><f:translate key="tx_galerielstbdd_domain_model_auteur.email" /></th>
-				<th><f:translate key="tx_galerielstbdd_domain_model_auteur.telephone" /></th>
-				<th><f:translate key="tx_galerielstbdd_domain_model_auteur.site_internet" /></th>
-				<th><f:translate key="tx_galerielstbdd_domain_model_auteur.bio" /></th>
-				<th> </th>
-				<th> </th>
-			</tr>
+		<ul class="tx_galerielstbdd list-group">
 
 			<f:for each="{auteurs}" as="auteur">
-				<tr>
-					<td><f:link.action action="show" arguments="{auteur : auteur}"> {auteur.nom}</f:link.action></td>
-					<td><f:link.action action="show" arguments="{auteur : auteur}"> {auteur.prenom}</f:link.action></td>
-					<td><f:link.action action="show" arguments="{auteur : auteur}"> {auteur.profession}</f:link.action></td>
-					<td><f:link.action action="show" arguments="{auteur : auteur}"> {auteur.adress}</f:link.action></td>
-					<td><f:link.action action="show" arguments="{auteur : auteur}"> {auteur.email}</f:link.action></td>
-					<td><f:link.action action="show" arguments="{auteur : auteur}"> {auteur.telephone}</f:link.action></td>
-					<td><f:link.action action="show" arguments="{auteur : auteur}"> {auteur.siteInternet}</f:link.action></td>
-					<td><f:link.action action="show" arguments="{auteur : auteur}"> {auteur.bio}</f:link.action></td>
-					<td><f:link.action action="edit" arguments="{auteur : auteur}">Edit</f:link.action></td>
-					<td><f:link.action action="delete" arguments="{auteur : auteur}">Delete</f:link.action></td>
-				</tr>
+				<li class="list-group-item">
+					<f:link.action action="show" arguments="{auteur : auteur}"> {auteur.prenom} {auteur.nom}</f:link.action>, {auteur.profession}<br/>
+					<b>{auteur.email}</b> - {auteur.telephone}
+				</li>
 			</f:for>
-		</table>
-
-		<f:link.action action="new">New Auteur</f:link.action>
+		</ul>
 	</f:section>
 </html>
