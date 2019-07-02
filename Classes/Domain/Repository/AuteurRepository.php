@@ -15,7 +15,7 @@ namespace Galerielstbdd\GalerieLstbdd\Domain\Repository;
  ***/
 
 /**
- * The repository for Albums
+ * The repository for Auteurs
  */
 class AuteurRepository extends \TYPO3\CMS\Extbase\Persistence\Repository
 {

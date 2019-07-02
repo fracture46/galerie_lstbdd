@@ -17,6 +17,15 @@
 
 		<f:flashMessages />
 		<f:render partial	="Album/Properties" arguments="{album:album}" />
+
+		<ul class="tx_galerielstbdd list-group">
+			<f:for each="{images}" as="image">
+				<li class="list-group-item">
+					<p> {image.nom}</p>
+				</li>
+			</f:for>
+		</ul>
+
 		<f:link.action action="list" class="btn btn-primary" style="margin:1% 2% 0 0">Retour à la liste</f:link.action>
 	</f:section>
 </html>

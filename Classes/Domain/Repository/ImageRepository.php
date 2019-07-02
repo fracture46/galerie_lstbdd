@@ -15,8 +15,19 @@ namespace Galerielstbdd\GalerieLstbdd\Domain\Repository;
  ***/
 
 /**
- * The repository for Categories
+ * The repository for Images
  */
-class CategoryRepository extends \TYPO3\CMS\Extbase\Persistence\Repository
+class ImageRepository extends \TYPO3\CMS\Extbase\Persistence\Repository
 {
+    protected $defaultOrderings = [
+        'datePublication' => QueryInterface::ORDER_DESCENDING
+    ];
+
+
+    public function fiveLastImages(){
+        $query = $this->createQuery();
+        $query->setOrderings('datePublication', 'TYPO3\CMS\Extbase\Persistence\QueryInterface::ORDER_DESCENDING');
+        $query->setLimit(5);
+        return $query->execute();
     }
+}

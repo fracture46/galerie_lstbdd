@@ -20,12 +20,21 @@ namespace Galerielstbdd\GalerieLstbdd\Controller;
 class ImageController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
 {
     /**
+     * imageRepository
+     * 
+     * @var \Galerielstbdd\GalerieLstbdd\Domain\Repository\ImageRepository
+     * @inject
+     */
+    protected $imageRepository = null;
+
+    /**
      * action latest
      * 
      * @return void
      */
     public function latestAction()
     {
-
+        $images = $this->imageRepository->fiveLastImages();
+        $this->view->assign('images', $images);
     }
 }

@@ -47,6 +47,8 @@ class AlbumController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
     public function showAction(\Galerielstbdd\GalerieLstbdd\Domain\Model\Album $album)
     {
         $this->view->assign('album', $album);
+        $images = $album->fiveLastImages();
+        $this->view->assign('images', $images);
     }
 
     /**

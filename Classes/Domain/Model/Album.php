@@ -283,4 +283,21 @@ class Album extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     {
         $this->tags = $tags;
     }
+
+    /**
+     * Get 5 last images
+     * 
+     */
+    public function fiveLastImages(){
+        $fiveLast = new \TYPO3\CMS\Extbase\Persistence\ObjectStorage();
+        $count = 1;
+        foreach($this->images as $image) {
+            $fiveLast->attach($image);
+            $count++;
+            if($count == 5){
+                break;
+            }
+        }
+        return $fiveLast;
+    }
 }
