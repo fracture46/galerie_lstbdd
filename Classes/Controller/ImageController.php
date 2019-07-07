@@ -10,7 +10,7 @@ namespace Galerielstbdd\GalerieLstbdd\Controller;
  *
  *  (c) 2019 Loïc BITTER <loic.bitter@etu.u-bordeaux.fr>, IUT Bordeaux
  *           Tony DUONG <tony.duong@etu.u-bordeaux.fr>, IUT Bordeaux
- *           Sylvain DUPUY <sylvain.dupuy@etu.u-bordeaux.fr>, IUT Bordeaux
+ *           Sylvain DUPUY <sylvain.dupuy.1@etu.u-bordeaux.fr>, IUT Bordeaux
  *
  ***/
 

@@ -6,7 +6,7 @@ namespace Galerielstbdd\GalerieLstbdd\Tests\Unit\Controller;
  *
  * @author Loïc BITTER <loic.bitter@etu.u-bordeaux.fr>
  * @author Tony DUONG <tony.duong@etu.u-bordeaux.fr>
- * @author Sylvain DUPUY <sylvain.dupuy@etu.u-bordeaux.fr>
+ * @author Sylvain DUPUY <sylvain.dupuy.1@etu.u-bordeaux.fr>
  */
 class AlbumControllerTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
 {

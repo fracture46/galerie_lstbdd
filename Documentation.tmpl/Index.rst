@@ -35,7 +35,7 @@ Galerie_lstbdd
 		Loïc BITTER, Tony DUONG, Sylvain DUPUY
 
 	:Email:
-		loic.bitter@etu.u-bordeaux.fr, tony.duong@etu.u-bordeaux.fr, sylvain.dupuy@etu.u-bordeaux.fr
+		loic.bitter@etu.u-bordeaux.fr, tony.duong@etu.u-bordeaux.fr, sylvain.dupuy.1@etu.u-bordeaux.fr
 
 	:License:
 		This document is published under the Open Content License
