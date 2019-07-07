@@ -17,14 +17,20 @@
 
 		<f:flashMessages />
 
-		<ul class="tx_galerielstbdd list-group" >
-			<f:for each="{albums}" as="album">
-				<li class="list-group-item">
-					<f:link.action action="show" arguments="{album : album}"> {album.nom}</f:link.action> publié le
-					<f:format.date format="d/m/Y">{album.date}</f:format.date>
-					<f:format.html>{album.description}</f:format.html>
-				</li>
-			</f:for>
-		</ul>
+        <f:widget.paginate objects="{albums}" as="paginatedAlbums"
+            configuration="{itemsPerPage: settings.itemsPerPage, maximumNumberOfLinks: 10}">
+        
+            <ul class="tx_galerielstbdd list-group" >
+                <f:for each="{paginatedAlbums}" as="album">
+                    <li class="list-group-item">
+                        <f:link.action action="show" arguments="{album : album}"> {album.nom}</f:link.action> publié le
+                        <f:format.date format="d/m/Y">{album.date}</f:format.date>
+                        <f:format.html>{album.description}</f:format.html>
+                    </li>
+                </f:for>
+            </ul>
+        
+        </f:widget.paginate>
+
 	</f:section>
 </html>

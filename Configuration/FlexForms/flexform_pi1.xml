@@ -50,6 +50,15 @@
 							</config>
 						</TCEforms>
 					</settings.albumPid>
+                    <settings.itemsPerPage>
+                        <TCEforms>
+                            <label>Nombre d'items pour la pagination</label>
+                            <config>
+                                <type>input</type>
+                                <size>2</size>
+                            </config>
+                        </TCEforms>
+                    </settings.itemsPerPage>
 				</el>
 			</ROOT>
 		</sDEF>
