@@ -6,7 +6,7 @@ Extension Typo3 de gestion d'une galerie photo
 Depuis le dossier de votre projet :
 
 ```bash
-cd typo3conf/ext/
+cd web/typo3conf/ext/
 git clone git@github.com:fracture46/galerie_lstbdd.git
 ```
 
