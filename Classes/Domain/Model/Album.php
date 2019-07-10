@@ -294,7 +294,7 @@ class Album extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
         foreach($this->images as $image) {
             $fiveLast->attach($image);
             $count++;
-            if($count == 5){
+            if($count == 6){
                 break;
             }
         }

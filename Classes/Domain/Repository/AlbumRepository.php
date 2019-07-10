@@ -19,4 +19,10 @@ namespace Galerielstbdd\GalerieLstbdd\Domain\Repository;
  */
 class AlbumRepository extends \TYPO3\CMS\Extbase\Persistence\Repository
 {
+    public function fiveLastAlbums(){
+        $query = $this->createQuery();
+        $query->setOrderings(['date' => \TYPO3\CMS\Extbase\Persistence\QueryInterface::ORDER_DESCENDING]);
+        $query->setLimit(5);
+        return $query->execute();
     }
+}

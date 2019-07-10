@@ -370,4 +370,21 @@ class Auteur extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     {
         $this->reseauSocial = $reseauSocial;
     }
+
+    /**
+     * Get 5 last albums
+     * 
+     */
+    public function fiveLastAlbums(){
+        $fiveLast = new \TYPO3\CMS\Extbase\Persistence\ObjectStorage();
+        $count = 1;
+        foreach($this->albums as $album) {
+            $fiveLast->attach($album);
+            $count++;
+            if($count == 6){
+                break;
+            }
+        }
+        return $fiveLast;
+    }
 }
