@@ -9,10 +9,7 @@
         <ul class="tx_galerielstbdd list-group" >
             <f:for each="{images}" as="image">
                 <li class="list-group-item">
-                    <a href="{image.fichier}">
-                        Access
-                    </a>
-                    <p> {image.nom}</p>
+                    <p>{image.nom}</p>
 					<f:image image="{image.fichier}" style="width:320px;height:250px"/>
                 </li>
             </f:for>
