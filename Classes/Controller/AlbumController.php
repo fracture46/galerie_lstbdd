@@ -69,6 +69,17 @@ class AlbumController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
      */
     public function searchAction()
     {
+        $research = $_POST['tx_galerielstbdd_pi1']['nom'];
+        $albums = $this->albumRepository->findAll();
+        $filteredAlbums = array();
 
+        foreach ($albums as $album){
+            if(stripos($album->getNom(), $research) !== FALSE) {
+                array_push($filteredAlbums, $album);
+            }
+        }
+
+        $this->view->assign('albums', $filteredAlbums);
+        $this->view->assign('research', $research);
     }
 }
